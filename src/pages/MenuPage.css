@@ -1,0 +1,117 @@
+.burger-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin: 2rem auto;
+    max-width: 800px;
+  }
+  
+  .burger-card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .burger-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .burger-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+  .burger-card h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.25rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .burger-card p {
+    margin: 0.5rem;
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+  }
+  
+  /* Modal styles */
+  .ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ReactModal__Overlay--after-open{
+    opacity: 1;
+  }
+  
+  .ReactModal__Overlay--before-close{
+    opacity: 0;
+  }
+  
+  .ReactModal__Content {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    animation: modal-appear 200ms ease-in-out;
+  }
+  
+  .ReactModal__Content img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .ReactModal__Content h3 {
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+  }
+  
+  .ReactModal__Content p {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    text-align: center;
+    color: #666;
+  }
+  
+  .ReactModal__Content button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  @keyframes modal-appear {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

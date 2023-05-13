@@ -1,0 +1,49 @@
+/* CSS pour le container du carousel */
+.Carousel {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+  /* CSS pour les flèches du carousel */
+.Carousel .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.Carousel .slick-arrow:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.Carousel .slick-prev {
+    left: 10px; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Carousel .slick-next {
+    right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  /* CSS pour les images du carousel */
+.Carousel img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+}

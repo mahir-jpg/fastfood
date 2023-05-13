@@ -1,0 +1,70 @@
+/* CSS pour les offres spéciales */
+.SpecialOffers {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.SpecialOffers h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.SpecialOffers-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.SpecialOffer {
+    position: relative;
+    margin: 10px;
+    width: calc(33.33% - 20px);
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.SpecialOffer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.SpecialOffer img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.SpecialOffer:hover img {
+    transform: scale(1.1);
+}
+
+.SpecialOffer-details {
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.SpecialOffer-details h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.SpecialOffer-details p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #999;
+}
+
+.SpecialOffer-details .SpecialOffer-price {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
